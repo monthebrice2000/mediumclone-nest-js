@@ -26,6 +26,41 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+I have built many Apis like :
+
+###CREATE USER
+```
+POST auth/users
+```
+###Login USER
+```
+POST auth/users/login
+```
+###GET CURRENT USER
+```
+GET auth/user
+```
+###UPDATE USER
+```
+PUT auth/user
+```
+###CREATE ARTICLE
+```
+POST /articles
+```
+###GET ARTICLE BY Slug
+```
+GET /articles/:slug
+```
+###LIKE ARTICLE
+```
+POST /articles/:slug/like
+```
+###DISLIKE ARTICLE
+```
+DELETE /articles/:slug/like
+```
+
 ## Installation
 
 ```bash
@@ -36,13 +71,13 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ yarn start
 
 # watch mode
-$ npm run start:dev
+$ yarn start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn start:prod
 ```
 
 ## Test
