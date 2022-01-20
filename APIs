@@ -1,0 +1,32 @@
+POST http://localhost:3000/auth/users
+Accept: application/json
+Content-Type: application/json
+
+{   "users": {     "username": "monthebrice",     "email": "monthe@gmail.com",     "password": "colledSdlilniai@.com222"   } }
+
+###
+
+
+POST http://localhost:3000/auth/users/login
+Accept: application/json
+Content-Type: application/json
+
+{   "user": {  "email": "monthe@gmail.com", "password": "colledSdlilniai@.com222"   } }
+
+###
+
+
+GET http://localhost:3000/auth/user
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiY2RhN2JmLWQ4YTgtNDhiMi1hZGFiLWU2MGY5OGFiNmRhMCIsImVtYWlsIjoibW9udGhlQGdtYWlsLmNvbSIsImJpbyI6IiIsImltYWdlIjoiIiwicGFzc3dvcmQiOiIkMmIkMTAkL1RFL3hiZFozRkJ3SnA3bDBrNmFZZVF0UmxtbEpOMUhxVzlzTDAyL2hrUUk3NUlya0ZLR1ciLCJ1c2VybmFtZSI6Im1vbnRoZWJyaWNlIiwiaWF0IjoxNjQyNjMzODkxLCJleHAiOjE2NDI3MjAyOTF9.wbQN_4i0PNjdwjXc8E37LpFFLaNcDn0kSUudFTIHAYQ
+
+
+###
+PATCH http://localhost:3000/auth/user
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiY2RhN2JmLWQ4YTgtNDhiMi1hZGFiLWU2MGY5OGFiNmRhMCIsImVtYWlsIjoibW9udGhlQGdtYWlsLmNvbSIsImJpbyI6IiIsImltYWdlIjoiIiwicGFzc3dvcmQiOiIkMmIkMTAkL1RFL3hiZFozRkJ3SnA3bDBrNmFZZVF0UmxtbEpOMUhxVzlzTDAyL2hrUUk3NUlya0ZLR1ciLCJ1c2VybmFtZSI6Im1vbnRoZWJyaWNlIiwiaWF0IjoxNjQyNjMzODkxLCJleHAiOjE2NDI3MjAyOTF9.wbQN_4i0PNjdwjXc8E37LpFFLaNcDn0kSUudFTIHAYQ
+Content-Type: application/json
+
+{   "user": {  "email": "monthe@gmail.com", "bio":"haut parleurrrrrrrrr" , "image": "parallleelleeee"   } }
+###
+

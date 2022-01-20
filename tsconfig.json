@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@models/*": ["./src/tags/models/*","./src/auth/models/*","./src/articles/models/*" ],
+      "@services/*": ["./src/tags/services/*", "./src/auth/services/*", "./src/articles/services/*"],
+      "@controllers/*": ["./src/tags/controllers/*", "./src/auth/controllers/*", "./src/articles/controllers/*"],
+      "@repositories/*": ["./src/tags/repositories/*", "./src/auth/repositories/*", "./src/articles/repositories/*" ],
+      "@configs/*": ["./src/configs/*"],
+      "@tags/*": ["./src/tags/*", "./src/auth/*"],
+      "@middlewares/*": ["./src/tags/middlewares/*", "./src/auth/middlewares/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
+}
